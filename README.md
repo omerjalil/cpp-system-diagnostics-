@@ -1,12 +1,19 @@
-# Hi, I'm Omer 👋
+# C++ Hardware Architecture Diagnostic Tool
 
-I'm a Freshman Computer Engineering student.
+A lightweight C++ console application designed to inspect system-level execution parameters, pointer width, and logical processor counts.
 
-### Current Focus
-- Learning C++ and object-oriented programming
-- Working on coursework and small system diagnostics tools
-- Building solid foundations in computer systems
+## Overview
 
-### Tech Stack
-- **Languages:** C++
-- **Tools:** Git, GitHub, Linux / Command Line
+Built as a Computer Engineering project to demonstrate basic C++ execution, memory pointer inspection, and system concurrency features without external library dependencies.
+
+## Key Features
+
+- Detects system execution architecture (32-bit vs. 64-bit) via memory pointer size
+- Queries available CPU thread hardware concurrency
+- Zero external dependencies (Standard C++ Library only)
+
+## How to Build & Run
+
+```bash
+g++ -o sys_info sys_info.cpp
+./sys_info
